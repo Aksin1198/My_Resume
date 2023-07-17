@@ -1,24 +1,14 @@
-<!--
-Welcome to my resume
--->
-@REDACTED=true 
-@NAME=Ashish KUMar Singh
-@ROLE=Aspiring  Engineer
-@LOCATION=Varanasi, U.P. (221003)
-@PHONE=+91-9451518656
-@EMAIL=aksin1198@gmail.com
-@WEBSITE=Website
-@GITHUB=github.com/Aksin1198
-@LINKEDIN=LinkedIn
 
-# {NAME}
+# ASHISH KUMAR SINGH
 
 <div class="section headerInfo">
-<span class="my-role">{ROLE}</span>
-<span class="my-location">{LOCATION}</span>
-
-- {PHONE}
-- {EMAIL}
+<span class="my-role">Aspiring DevOps Engineer</span>
+  
+<span class="my-location">Varanasi, U.P.(221003)</span>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="setting.css">
+- +91-9451518656
+- aksin1198@gmail.com
 - [WEBSITE]()
 - [GITHUB](https://www.github.com/Aksin1198)
 - [LinkedIn](https://www.linkedin.com/in/ashish1198/)
@@ -143,3 +133,8 @@ Class-10 *(High School)*:  <span class="spacer"></span><span>*CGPA = 8.6*</span>
 3. *Mobile Integration:* Implemented Android SDK for secure image encryption/decryption.
 4. *Efficient Java Implementation:* Utilizing Java for seamless and efficient encryption processing.
 5. *Improved Transparency:* Applied advanced encryption algorithms for data integrity and transparency in transmission and storage.
+<!-- Older resume bits can be commented out so that you can keep the info without deleting it -->
+
+<!-- ### <span>Software Engineering Intern, Google</span> <span>Mar 2017 &mdash; Sept 2017</span>
+
+### <span>Software Engineering Intern, Curalate</span> <span>June 2016 &mdash; Sept 2016</span> -->
