@@ -1,0 +1,168 @@
+/* You can poke around this CSS if you want to customize your formatting / styling further */
+/* You can even import custom fonts! */
+
+@import url('https://fonts.googleapis.com/css2?family=Calibri:wght@500;600;700&display=swap');
+
+:root {
+    --main-color: black;
+    --accent-color: #B30000;
+    --link-color: #0C5B97;
+    --h-font-size: 27pt;
+    --h2-font-size: 17pt;
+    --h3-font-size: 11pt; 
+    --headerInfo-font-size: 11pt;
+}
+/* meta */
+body {
+    font-family: 'Calibri', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+.spacer {
+    margin: 0px auto;
+}
+
+/* ordering of content */
+h1 {
+    order: 0;
+}
+
+.headerInfo {
+    order: 1;
+}
+
+/* styling content */
+h1, h2, h3, p, a, li {
+    color: var(--main-color);
+    font-size: 11pt;
+}
+
+h1::first-letter, h2 span::first-letter {
+    color: var(--accent-color);
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 6px 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--h-font-size);
+    margin: 0;
+    padding: 24pt 0 0 0;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    padding: 0;
+    padding-top: 0.7em;
+    padding-bottom: 5px;
+    align-items: center;
+    display: flex;
+}
+
+h2::after {
+    content: '';
+    flex: 1 1 auto;
+    margin-left: 3px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+h3 {
+    display: flex;
+    font-size: var(--h3-font-size); 
+    padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: left;
+    list-style-type: none;
+}
+
+ul > li {
+    margin-right: -0.25in;
+}
+
+ul > li:before {
+    content: "•";
+    position: absolute;
+    margin: 0;
+    margin-left: -0.25in;
+    padding-top: 2px;
+}
+
+/* header info content */
+.headerInfo > ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto 0px !important;
+    padding: 0;
+    padding-bottom: 11px;
+}
+
+.headerInfo > ul > li {
+    display: inline;
+    white-space: pre;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.headerInfo > ul > li:before {
+    content: "";
+}
+
+.headerInfo > ul > li:not(:last-child) {
+    margin-right: 3px;
+}
+
+.headerInfo > ul > li:not(:last-child):after {
+    content: "|";
+    margin-left: 3px;
+}
+
+/* role content */
+.my-role { 
+    display: block;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: var(--headerInfo-font-size);
+    color: var(--accent-color);
+}
+
+/* location content */
+.my-location {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: var(--headerInfo-font-size);
